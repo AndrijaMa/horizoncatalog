@@ -12,3 +12,10 @@ conda create --name horizon_irc -c conda-forge findspark=2.0.1 jupyter=1.0.0 pys
 conda activate horizon_irc
 
 Download and open the spark_clean.ipynb file
+
+Configure:
+- org-account
+- pat_token 
+- region
+
+You created and collected all these values as part of the "setup snowflake.sql" code.
