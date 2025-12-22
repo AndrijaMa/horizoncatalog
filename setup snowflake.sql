@@ -1,5 +1,12 @@
 USE ROLE ACCOUNTADMIN;
 
+--Get the name of your Snowflake region (You will use this when you setup your spark notebook).
+SELECT CURRENT_REGION();
+
+--Get the name of you SNOWFLAKE_ORG and ACCOUNT_NAME (You will use this when you setup your spark notebook).
+SELECT CURRENT_ORGANIZATION_NAME() || '-' || CURRENT_ACCOUNT_NAME();
+
+
 CREATE DATABASE IF NOT EXISTS ICEBERG_TEST_DB;
 
 /*
